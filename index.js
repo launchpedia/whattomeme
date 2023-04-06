@@ -21,7 +21,6 @@ generateMemeButton.addEventListener('click', () => {
       const memeText = randomMeme['Meme Text'];
       memeContainer.innerHTML = `
         <img src="${memeImageUrl}" alt="Meme Image">
-        <p>${memeText}</p>
       `;
     })
     .catch(error => console.error(error));
