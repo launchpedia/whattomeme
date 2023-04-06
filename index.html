@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center; /* Add this */
+  background-color: #191919;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .by img {
+    width: 70px;
+  }
+}
+
+	
+
+.button {
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Change this */
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #191919;
+  border: 1px solid #fff;
+  font-family: 'IBM Plex Serif', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 4px;
+  box-shadow: 6px 6px 0px 0px hsla(0, 0%, 100%, 1);
+  margin: 0 auto;
+  margin-bottom: 20px}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.lpbutton {
+  border: none;
+  color: #000000;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Change this */
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-family: 'IBM Plex Serif', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 4px;
+box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.25);
+  margin: 0 auto;}
+
+.lpbutton:hover {
+  transform: scale(1.1);
+}
+      
+      h1 {
+     font-family: 'IBM Plex Serif', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 70px;
+	text-align: center;
+	color: #ffffff; 	
+	margin-bottom: 8px;
+      }
+
+h2 {
+     font-family: 'IBM Plex Serif', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff; 	
+	margin-top: 0px;
+      }
+      
+p{
+font-family: 'IBM Plex Sans', sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 20px;
+l	line-height: 26px;
+	text-align: center;
+	color: #fff;
+  	list-style-position: inside;
+margin-bottom: 32px;
+
+}
+     
+
+    .by {
+  font-family: 'IBM Plex Serif', serif;
+  right:0;
+  bottom:0;
+  position:fixed;
+  z-index:100;
+  border-top-left-radius: 5px;
+  padding: 0px 6px;
+  border-top:1px solid #212121;
+  border-left:1px solid #212121;
+  background:#191919;
+  color:#fff;
+  text-decoration:none;
+}
+
+.by:hover{
+
+border-top:1px solid #ffffff;
+  border-left:1px solid #ffffff;
+}
+
+.by-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.by img {
+  width:100px;
+  vertical-align:middle;
+}
+
+hr {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  margin-top: 80px;
+margin-bottom: 32px;	
+  width: 75%;
+}
+
+#meme-container {
+        border: 20px;
+        border-color: #333333;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+#meme-container img {
+        border: 20px solid #333;
+        border-radius: 4px;
+        height: 400px;
+        width: auto;
+       margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      }
+
+    </style>
+  </head>
+
+
+
+  <body>
+      <h1>Meme Ideas for startup founders</h1>
+	
+  	<p>Click on “New Meme Idea” Button and get a new meme everytime</p>
+    <button id="generate-meme-btn" class="button">New Meme Idea →</button>
+       <div id="meme-container"></div>
+          <script src="index.js"></script>
+	
+
+<a target="_blank" rel="noopener" class="by" href="https://launchpedia.co/">
+  <div class="by-container">
+    <p style="margin-right:10px;">by</p>
+    <img src="https://launchpedia.co/wp-content/uploads/2023/02/Full-logo.png" />
+  </div>
+</a>
+<hr>
+<h2>Get 60+ Places to promote your startup and boost your website traffic for free</h2>
+<a href="https://launchpedia.co/" style="text-decoration: none;" ><button class="lpbutton">Checkout Places →</button></a>
+  </body>
+</html>
