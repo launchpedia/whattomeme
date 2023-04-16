@@ -131,7 +131,7 @@ l	line-height: 26px;
 	text-align: center;
 	color: #fff;
   	list-style-position: inside;
-margin-bottom: 32px;
+	margin-bottom: 32px;
 
 }
 hr {
@@ -163,6 +163,10 @@ margin-bottom: 32px;
       max-width: 100%;
       }
 
+input type="radio" {
+    color: white;
+  }
+
 
     </style>
   </head>
@@ -174,6 +178,12 @@ margin-bottom: 32px;
      	 <h1 style="margin-top: 10px;">Meme Ideas for startup founders</h1>
 	
   	<p>Click on “New Meme Idea” Button and get a new meme everytime</p>
+	   <div>
+   		 <input type="radio" id="table1" name="table-selection" value="whattomeme" checked>
+    		<label for="table1" style="color:white;">Random</label>
+    		<input type="radio" id="table2" name="table-selection" value="new">
+    		<label for="table2" style="color: white;">Latest Memes</label>
+  	</div>
    	 <button id="generate-meme-btn" class="button">New Meme Idea →</button>
        		<div id="meme-container"></div>
           		<script src="index.js"></script>
